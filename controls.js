@@ -5,10 +5,10 @@ class Controls{
         this.right=false;
         this.reverse=false;
 
-        this.#addKeyBoardListeners();
+        this.#addKeyboardListeners();
     }
 
-    #addKeyBoardListeners(){
+    #addKeyboardListeners(){
         document.onkeydown=(event)=>{
             switch(event.key){
                 case "ArrowLeft":
@@ -24,7 +24,6 @@ class Controls{
                     this.reverse=true;
                     break;
             }
-            
         }
         document.onkeyup=(event)=>{
             switch(event.key){
@@ -41,7 +40,6 @@ class Controls{
                     this.reverse=false;
                     break;
             }
-            
         }
     }
 }
